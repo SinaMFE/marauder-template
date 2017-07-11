@@ -1,0 +1,1 @@
+[{"entry":"index","dependency":[{"name":"../../css/index.css","type":"CMD","version":"2.0.0","dependency":[]},{"name":"./1","type":"CMD","version":"2.0.0","dependency":[]},{"name":"./1","type":"CMD","version":"2.0.0","dependency":[]},{"name":"./2","type":"CMD","version":"2.0.0","dependency":[]}]}]
