@@ -2,20 +2,25 @@
 
 #### 命令
 
+本工程严重依赖yarn
 ``` bash
 # 安装依赖
-npm install
+yarn
 
-# 启动测试环境，端口8080
-npm run dev
+# 启动测试环境，端口8080,其中index为要调试的页面名称
+npm run dev index
 
-# 生产环境打包,打包后的代码在dist目录下
-npm run build
+# 生产环境打包,打包后的代码在dist目录下,其中index为要打包的页面名称
+npm run build index
+
+
+#ftp调试环境，需要在marauder.config.js中设置
+npm run ftp index (branchname)
 
 ```
 
 #### 配置文件
-所有配置原则上只允许在marauder.config.js里修改，如果没有该配置选项，请联系fengwan@staff.sina.com.cn
+所有配置原则上只允许在marauder.config.js里修改
 
 ```
 marauder.config.js

@@ -5,11 +5,9 @@
   "author": "braisedcakes <braisedcakes@gmail.com>",
   "private": true,
   "scripts": {
-    "prepush": "node node_modules/@mfelibs/base-webpack-module_dependency/prepush",
     "dev": "node node_modules/sinamfe-webpack-marauder/build/dev-server.js",
     "build": "yarn&&node node_modules/sinamfe-webpack-marauder/build/build.js",
-    "proxy": "node-mitmproxy -c node_modules/@mfelibs/base-proxy-mitmproxy/index.js&npm run dev",
-    "push": "bash node_modules/@mfelibs/webpack-marauder/.githelper/push.sh"
+    "proxy": "node-mitmproxy -c node_modules/@mfelibs/base-proxy-mitmproxy/index.js&npm run dev"
   },
   "dependencies": {
     "react": "^15.5.4",
