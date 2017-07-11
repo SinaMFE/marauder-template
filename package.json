@@ -20,7 +20,7 @@
     "vue-template-compiler": "^2.3.3"
   },
   "devDependencies": {
-    "sinamfe-webpack-marauder": "^1.0.2",
+    "sinamfe-webpack-marauder": "^1.0.7",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
