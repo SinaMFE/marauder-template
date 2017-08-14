@@ -17,6 +17,7 @@ module.exports = {
     port: 0,
     user: '',
     password: '',
+    // 远程路径配置
     remotePath: {
       version: true
     }
