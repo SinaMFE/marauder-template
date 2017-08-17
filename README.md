@@ -21,10 +21,10 @@ npm run build index --ftp
 ## 配置文件
 所有配置原则上只允许在 `marauder.config.js` 里修改
 
-- svnPath		线上环境项目目录,非必填
-- ftpPath  	测试环境项目目录,非必填
-- hash  		打包后的js，css，image是否加hash，默认true
-- resourcePath : ['config.js','config2.js'] 相对路径，会把此类文件copy到dist/resource目录下
+- **svnPath**		线上环境项目目录,非必填
+- **ftpPath**  	测试环境项目目录,非必填
+- **hash**  		打包后的js，css，image是否加hash，默认true
+- **resourcePath** : ['config.js','config2.js'] 相对路径，会把此类文件copy到dist/resource目录下
 
 
 ## 开发目录结构
