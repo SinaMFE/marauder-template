@@ -1,12 +1,11 @@
 {
     "name": "marauder-template",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "marauder模板",
     "author": "braisedcakes <braisedcakes@gmail.com>",
     "scripts": {
-        "dev": "node node_modules/sinamfe-webpack-marauder/build/dev-server.js",
-        "build": "yarn && node node_modules/sinamfe-webpack-marauder/build/build.js",
-        "proxy": "node-mitmproxy -c node_modules/@mfelibs/base-proxy-mitmproxy/index.js&npm run dev"
+        "dev": "node node_modules/webpack-marauder/build/dev-server.js",
+        "build": "yarn && node node_modules/webpack-marauder/build/build.js"
     },
     "dependencies": {
         "react": "^15.5.4",
