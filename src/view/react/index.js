@@ -6,7 +6,6 @@ var CommentForm = React.createClass({
     return {author: '', text: ''};
   },
   handleAuthorChange: function(e) {
-    debugger
     this.setState({author: e.target.value});
   },
   handleTextChange: function(e) {
