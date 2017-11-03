@@ -8,6 +8,12 @@
         "build": "yarn && node node_modules/webpack-marauder/build/build.js"
     },
     "dependencies": {
+        "sinamfe-marauder-debug":"^0.0.1",
+        "sinamfe-marauder-ensure-ls":"^0.0.10",
+        "sinamfe-tools-https":"^0.0.2",
+        "sinamfe-webpack-https":"^0.0.5",
+        "sinamfe-webpack-module_dependency":"^0.0.1",
+        "webpack-marauder":"^1.0.7",
         "react": "^15.5.4",
         "react-dom": "^15.5.4",
         "vue": "^2.3.3"
