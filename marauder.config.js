@@ -1,5 +1,5 @@
 module.exports = {
-  hash: false,
+  hash: false, // 文件 md5 后缀
   proxy: [
     {
       pattern: '', //替换目标url
@@ -7,19 +7,20 @@ module.exports = {
     }
   ],
   // vendor:["@mfelibs/base-utils"],
-  //publicPath:"https://mjs.sinaimg.cn/wap/",//线上amd绝对路径文件夹
-  minpic: true,
+  publicPath: '/', // 线上 CDN 路径
+  minpic: false,
   resourcePath: [],
-  zip: false, //控制 是否打包zip,ci是否上传zip
-  zip_config_name: '', //控制发包的json文件名
+  zip: false, // 控制是否打包 zip, ci 是否上传 zip
+  zip_config_name: '', // 控制发包的 json 文件名
   ftp: {
     host: '',
     port: 0,
     user: '',
     password: '',
+    openBrowser: true, // 上传完毕后是否自动打开浏览器
     // 远程路径配置
     remotePath: {
-      version: true
+      version: true // 路径中是否包含版本号
     }
   }
 }
