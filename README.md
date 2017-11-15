@@ -19,7 +19,8 @@ npm run build index --ftp
 ```
 
 ## 配置文件
-所有配置原则上只允许在 `marauder.config.js` 里修改
+
+项目根目录下的 `marauder.config.js` 为脚手架配置文件
 
 - **svnPath**		线上环境项目目录,非必填
 - **ftpPath**  	测试环境项目目录,非必填
