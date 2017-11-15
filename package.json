@@ -4,10 +4,9 @@
     "description": "marauder 模板",
     "private": true,
     "scripts": {
-        "dev":
-            "node ./node_modules/@mfelibs/webpack-marauder/build/dev-server.js",
-        "build": "node ./node_modules/@mfelibs/webpack-marauder/build/build.js",
-        "dll": "node ./node_modules/@mfelibs/webpack-marauder/build/dll.js"
+        "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
+        "build": "node ./node_modules/webpack-marauder/build/build.js",
+        "dll": "node ./node_modules/webpack-marauder/build/dll.js"
     },
     "dependencies": {
         "react": "^16.1.1",
