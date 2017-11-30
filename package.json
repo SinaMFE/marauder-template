@@ -14,7 +14,7 @@
         "vue": "^2.5.3"
     },
     "devDependencies": {
-        "webpack-marauder": "^1.0.7"
+        "webpack-marauder": "^1.4.4"
     },
     "engines": {
         "node": ">= 4.0.0",
