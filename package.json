@@ -14,10 +14,10 @@
         "vue": "^2.5.3"
     },
     "devDependencies": {
-        "webpack-marauder": "^1.4.4"
+        "webpack-marauder": "^1.5.0"
     },
     "engines": {
-        "node": ">= 4.0.0",
+        "node": ">= 8.0.0",
         "npm": ">= 3.0.0"
     },
     "license": "MIT"
