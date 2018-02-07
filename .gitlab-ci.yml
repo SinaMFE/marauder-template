@@ -16,9 +16,9 @@ Ready Step:
 dev:
   stage: dev
   script:
-    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG
+    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
     - cnpm install @mfelibs/ci-runner-script
-    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME dev excute
+    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME dev excute $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
   tags:
     - SMFE
   when: manual
@@ -28,9 +28,9 @@ dev:
 simulate:
   stage: test
   script:
-    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG
+    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
     - cnpm install @mfelibs/ci-runner-script
-    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME simulate excute
+    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME simulate excute $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
   tags:
     - SMFE
   when: manual
@@ -40,9 +40,9 @@ simulate:
 deploy:
   stage: deploy
   script:
-    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG
+    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
     - cnpm install @mfelibs/ci-runner-script
-    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME nogrey excute
+    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME nogrey excute $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
   tags:
     - SMFE
   when: manual
@@ -52,9 +52,9 @@ deploy:
 grey:
   stage: deploy
   script:
-    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG
+    - echo $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME $CI_COMMIT_REF_SLUG $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
     - cnpm install @mfelibs/ci-runner-script
-    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME grey excute
+    - node ./node_modules/@mfelibs/ci-runner-script/index.js $GITLAB_USER_EMAIL $USER $CI_PROJECT_URL $CI_COMMIT_REF_NAME $CI_PROJECT_NAME grey excute $CI_BUILD_BEFORE_SHA $CI_BUILD_ID $CI_PROJECT_PATH
   tags:
     - SMFE
   when: manual
