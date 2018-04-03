@@ -4,9 +4,9 @@
     "description": "marauder 模板",
     "private": true,
     "scripts": {
-        "dev": "node ./node_modules/webpack-marauder/build/dev-server.js",
-        "build": "node ./node_modules/webpack-marauder/build/build.js",
-        "dll": "node ./node_modules/webpack-marauder/build/dll.js"
+        "dev": "marax dev",
+        "build": "marax build",
+        "dll": "marax dll"
     },
     "dependencies": {
         "react": "^16.1.1",
@@ -14,7 +14,7 @@
         "vue": "^2.5.3"
     },
     "devDependencies": {
-        "webpack-marauder": "^1.5.0"
+        "webpack-marauder": "^1.8.3"
     },
     "engines": {
         "node": ">= 8.0.0",
