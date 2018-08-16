@@ -14,7 +14,8 @@
         "vue": "^2.5.3"
     },
     "devDependencies": {
-        "webpack-marauder": "^1.12.2"
+        "webpack-marauder": "^1.12.2",
+        "typescript": "^3.0.1"
     },
     "engines": {
         "node": ">= 8.0.0",
