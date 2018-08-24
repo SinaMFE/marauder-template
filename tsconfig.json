@@ -8,6 +8,5 @@
     "noImplicitAny": false,
     "outDir": "lib"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts", "src/**/*.vue", "node_modules/@mfelibs/**/*.ts"]
 }
