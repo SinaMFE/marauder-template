@@ -5,6 +5,7 @@
     "module": "commonjs",
     "noImplicitReturns": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
     "noImplicitAny": false,
     "outDir": "lib"
   },
